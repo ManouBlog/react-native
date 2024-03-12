@@ -57,46 +57,34 @@ function Login({navigation}) {
         setRefreshing(false);
     };
   return (
-    <KeyboardAvoidingView 
-    style={{flex:1,
-    alignItems:"center",
-    marginTop: statusBarHeight,
-    marginHorizontal:10,
-    
-    }}
-    behavior="padding">
-    <SafeAreaView style={{flex:1}}>
-        
-    <ScrollView
-                refreshControl={
-                    <RefreshControl
-                        refreshing={refreshing}
-                        onRefresh={handleRefresh}
-                    />
-                }
-            >
-     
-    <View >
-     
+
+
+    <SafeAreaView  style={{flex:1}}>
+ {/* <ScrollView
+     refreshControl={
+         <RefreshControl
+             refreshing={refreshing}
+             onRefresh={handleRefresh}
+         />
+        }
+       > */}
+
+<KeyboardAvoidingView
+style={{flex:1}} 
+ behavior="padding">
+      
+    <View style={{flex:1,
+    justifyContent:"center",
+    paddingHorizontal:20
+    }}>
         <Text
         style={{
             fontWeight:"700",
-            fontSize:30
+            fontSize:30,
+            alignSelf:"center"
         }}
         >Sign In</Text>
-      
-      <View style={{
-        marginVertical:20
-      }}>
-        <Text style={{
-            letterSpacing:2
-        }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-          expedita cupiditate voluptatem saepe assumenda? Quibusdam pariatur
-          beatae, tenetur, eligendi exercitationem quaerat tempora aliquam
-          voluptatibus dolor cum esse itaque, sed similique!
-        </Text>
-      </View>
+    
       
       <View style={{
         marginVertical:20
@@ -107,6 +95,7 @@ function Login({navigation}) {
         }}
         >Email</Text>
         <TextInput
+
          style={{
             fontSize: 14,
             paddingVertical: 12,
@@ -204,14 +193,14 @@ function Login({navigation}) {
                     )}
                 </TouchableOpacity>
       </View>
+    
+     
+    
+      
     </View>
-  
-    </ScrollView>
-   
-
-    </SafeAreaView>
     </KeyboardAvoidingView>
-  
+    {/* </ScrollView> */}
+    </SafeAreaView>
   );
 }
 
