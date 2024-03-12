@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { SafeAreaView, Text, TextInput,TouchableOpacity, Image, ScrollView, View,
      Alert,ActivityIndicator,KeyboardAvoidingView} from 'react-native';
-     import Input from "../../compoments/Input"
-
-function ForgotPassword() {
+import Input from "../../compoments/Input"
+function Register() {
     const [data,setData]=useState({
-        email:"",
+        nom:"",
     })
   return (
     <SafeAreaView style={{
@@ -14,6 +13,7 @@ function ForgotPassword() {
         <KeyboardAvoidingView
 style={{flex:1}} 
  behavior="padding">
+
       <View style={{
         flex:1,
         justifyContent:"center",
@@ -27,34 +27,16 @@ style={{flex:1}}
 
     <View>
     <Input
-    label="Email"
-    valueInput={data.email}
+    label="nom"
+    valueInput={data.nom}
     handleText={(value)=>{
-        setData({...data,email:value})
+        setData({...data,nom:value})
         }
     }
     />
-    {/* <Text>
-        Email
-    </Text>
-    <TextInput
-    style={{
-        fontSize: 14,
-        paddingVertical: 14,
-        paddingLeft: 20,
-        backgroundColor: "#ffffff",
-        shadowColor: "black",
-        borderWidth: 1,
-        shadowRadius: 9,
-        elevation: 3,
-    }}
-    onChangeText={
-        (value)=>{
-          setData({...data,email:value})
-        }
-      }
-    value={data.email}
-    /> */}
+      
+    
+   
     <TouchableOpacity
     style={{
         backgroundColor:"black",
@@ -84,5 +66,4 @@ style={{flex:1}}
   )
 }
 
-
-export default ForgotPassword
+export default Register
