@@ -4,6 +4,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import Login from "./Pages/Login"
 import HomeView from "./Pages/Home/HomeView"
 import Splash from "./Pages/Splash/Splash"
+import ForgotPassword from "./Pages/password/ForgotPassword"
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
@@ -23,6 +24,16 @@ export default function App() {
       <Stack.Screen 
       name="Login"
        component={Login}
+         />
+         <Stack.Screen 
+      name="ForgotPassword"
+       component={ForgotPassword}
+       options={{ headerShown: true,
+      title:'',
+      headerTintColor: 'black',
+      headerBackTitleVisible:false,
+      }}
+       
          />
           <Stack.Screen
             name='Home'

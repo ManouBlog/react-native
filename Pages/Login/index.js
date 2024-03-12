@@ -183,7 +183,7 @@ style={{flex:1}}
                 </TouchableOpacity>
       <TouchableOpacity  
     onPress={()=>{
-      console.log("ekfkfk")
+      navigation.navigate("ForgotPassword")
     }}>
                 <Text style={{
                   color:"orange"
@@ -217,13 +217,9 @@ style={{flex:1}}
                     )}
                 </TouchableOpacity>
       </View>
-    
-     
-    
-      
+
     </View>
     </KeyboardAvoidingView>
-    {/* </ScrollView> */}
     </SafeAreaView>
   );
 }
