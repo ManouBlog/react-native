@@ -18,7 +18,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 
 function Login({navigation}) {
-    const statusBarHeight = StatusBar.currentHeight
+    // const statusBarHeight = StatusBar.currentHeight
     const [loading,setLoading]=useState(false);
     const [password,setPassword]=useState("");
     const [email,setEmail]=useState("");
@@ -26,7 +26,7 @@ function Login({navigation}) {
         email:"",
         password:"",
     });
-    const [refreshing, setRefreshing] = useState(false);
+    // const [refreshing, setRefreshing] = useState(false);
     const [showPassword, setShowPassword] = useState(true);
     const handleSignin=()=>{
         if(!email){
@@ -48,14 +48,14 @@ function Login({navigation}) {
         }
         
     }
-    const handleRefresh = () => {
-        setRefreshing(true);
-        setPassword("")
-        setEmail("")
-        setMsg("")
-        setLoading(false);
-        setRefreshing(false);
-    };
+    // const handleRefresh = () => {
+    //     setRefreshing(true);
+    //     setPassword("")
+    //     setEmail("")
+    //     setMsg("")
+    //     setLoading(false);
+    //     setRefreshing(false);
+    // };
   return (
 
 
