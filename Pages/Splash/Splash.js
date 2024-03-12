@@ -38,4 +38,4 @@ function Splash({ navigation }) {
   );
 }
 
-export default Splash;
+export default React.memo(Splash);
