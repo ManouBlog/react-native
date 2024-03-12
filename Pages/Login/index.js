@@ -167,6 +167,30 @@ style={{flex:1}}
         <Text>{msg.password}</Text>
       </View>
       }
+      <View style={{
+        flexDirection:"row",
+        justifyContent:"space-between",
+        alignContent:"center",
+        paddingVertical:12
+      }}>
+        <TouchableOpacity  
+    onPress={()=>{
+      console.log("ekfkfk")
+    }}>
+                <Text style={{
+                  color:"orange"
+                }}>Not account</Text>
+                </TouchableOpacity>
+      <TouchableOpacity  
+    onPress={()=>{
+      console.log("ekfkfk")
+    }}>
+                <Text style={{
+                  color:"orange"
+                }}>Forgot password</Text>
+                </TouchableOpacity>
+     
+      </View>
       <View>
       <TouchableOpacity style={ {
         backgroundColor:"black",
