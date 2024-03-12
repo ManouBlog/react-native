@@ -10,7 +10,7 @@ function Splash({ navigation }) {
     >
       <View style={styles.container}>
         {/* <Image style={styles.logo}source={require('../../../assets/logo.png')}/> */}
-        <Text style={styles.title}>Mob++</Text>
+        <Text style={styles.title}>IndexData</Text>
       </View>
 
       <View style={styles.container}>
