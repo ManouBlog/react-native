@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { SafeAreaView, Text, TextInput,TouchableOpacity, Image, ScrollView, View,
-     Alert,ActivityIndicator} from 'react-native';
+     Alert,ActivityIndicator,KeyboardAvoidingView} from 'react-native';
 
 
 function ForgotPassword() {
@@ -11,6 +11,9 @@ function ForgotPassword() {
     <SafeAreaView style={{
         flex:1,
     }}>
+        <KeyboardAvoidingView
+style={{flex:1}} 
+ behavior="padding">
       <View style={{
         flex:1,
         justifyContent:"center",
@@ -68,6 +71,7 @@ function ForgotPassword() {
 
     </View>
       </View>
+      </KeyboardAvoidingView>
     </SafeAreaView>
   )
 }
